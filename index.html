@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>OhmicResistenceCalculator</title>
+	<script src="ohmic.js"></script>
 </head>
 <body>
 	    <div class="upper">
@@ -11,12 +12,12 @@
 		<img src="img/Frame.png">
 	    </div>
 	    <div>
-		<h1 style=" color:#21A2BF;">TEAM  DALTON</h1>	
+		<h1 style=" color:#21A2BF;">TEAM DALTON</h1>	
 	   </div>
 		</div>
 	<div class="wholebody">
 		<div class="write">
-		<H2>CIRCUIT:</H2>
+		<h2 style="font-size: 2rem;">CIRCUIT:</h2>
 		<p>Enter the values of resistence and voltage to get the desired output:</p>
 	</div>
 	<div class="problem1">
@@ -24,15 +25,17 @@
 		<img src="img/prob11.png">
 	 </div>
 	 <form class="probinfo">
-	 	<input type="values" placeholder="R1"  required/>
-    	<input type="values" placeholder="R2"  required/>
-    	<input type="values" placeholder="R3"  required/>
-    	<input type="values" placeholder="R3"  required/>
-    	<input type="values" placeholder="voltage"  required/>
-    	<button>solution</button>
-    	<output type="values" placeholder="answer"></output>
-	 </form>
-
+	 	<input id="R1" type="values" placeholder="R1"  required/>
+    	<input id="R2" type="values" placeholder="R2"  required/>
+    	<input id="R3" type="values" placeholder="R3"  required/>
+    	<input id="R4" type="values" placeholder="R4"  required/>
+		<input id="V" type="values" placeholder="voltage"  required/>
+	</form>
+    	<button onclick="myFunction()">solution</button>
+		
+		<p id="demo"></p>
+	
+      
 	</div>
 	
 		<div class="problem2">
@@ -294,7 +297,7 @@ margin-left: 10%;
 }
 .upper{
 	 background-image: url("img/head.png");
-    width: 98vw;
+    width: 100vw;
     height: 20vh;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -417,6 +420,9 @@ about_the_project */
 .container{
   padding-right: 7%;
   padding-left: 7%;
+}
+html{
+	overflow-x: hidden;
 }
 </style>
 </html>
