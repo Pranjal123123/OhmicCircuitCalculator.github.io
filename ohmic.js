@@ -7,7 +7,6 @@ function myFunction(){
     var I2 = (V*R3 )/(R1*R2 + R1*R3 + R2*R3);
     var I3 = (V*R2 )/(R1*R2 + R1*R3 + R2*R3);
     var I = I2 + I3;
-    var text = I +" "+I2 +" "+ I3;
+    var text = I ;
     document.getElementById("demo").innerHTML = text;
 }
-
